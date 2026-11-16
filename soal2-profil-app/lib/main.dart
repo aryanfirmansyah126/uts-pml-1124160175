@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'screens/about_page.dart';
+import 'screens/edit_profile_page.dart';
 import 'screens/login_page.dart';
 import 'screens/profile_page.dart';
 
@@ -51,6 +53,8 @@ class _ProfilAppState extends State<ProfilApp> {
               isDarkMode: _themeMode == ThemeMode.dark,
               onThemeChanged: _ubahTema,
             ),
+        '/edit-profile': (context) => const EditProfilePage(),
+        '/about': (context) => const AboutPage(),
       },
     );
   }
